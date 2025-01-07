@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/imgSekolah"
+            android:src="@drawable/lgoo"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNama"
+            android:layout_toEndOf="@+id/imgSekolah"
+            android:layout_marginStart="10dp"
+            android:textSize="24sp"
+            android:text="Nama Pegawai"
+            android:textStyle="bold"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNoTelp"
+            android:layout_below="@+id/tvNama"
+            android:layout_toEndOf="@+id/imgSekolah"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:text="NIP.08238900672"
+            android:layout_marginTop="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tvNoTelp"
+            android:layout_toEndOf="@+id/imgSekolah"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="alamat"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/tvAkreditasi"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text=" no tlpn"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
